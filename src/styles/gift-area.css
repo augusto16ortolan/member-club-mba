@@ -1,0 +1,49 @@
+.gift-reach {
+  padding: 2.25rem 2rem 2rem;
+
+  figure {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--base---gray-200);
+    width: 4.5rem;
+    height: 4.5rem;
+    overflow: hidden;
+
+    img {
+      width: 4rem;
+    }
+  }
+
+
+  .progress-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing---md);
+
+    .progress-bar {
+      position: relative;
+      height: 0.5rem;
+      width: 100%;
+      overflow: hidden;
+      background: var(--base---gray-300);
+      border-radius: var(--radius--md);
+
+      .progress {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 0.5rem;
+        width: var(--dynamic-width, 0%);
+        background: var(--linear-gradient);
+        border-radius: var(--radius--md);
+        transition: all .3s;
+      }
+    }
+
+  }
+}

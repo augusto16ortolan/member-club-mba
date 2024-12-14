@@ -1,0 +1,39 @@
+.fidelity-area {
+  padding: 2.25rem 2rem 2rem;
+
+  .id-number {
+    background-color: var(--base---gray-300);
+    color: var(--base---gray-500);
+    padding: var(--spacing---xs) var(--spacing---md);
+    border-radius: var(--radius--lg);
+  }
+
+  .grid-fidelity {
+    grid-template-columns: repeat(5, 5.5rem);
+    grid-template-rows: repeat(2, 5.5rem);
+    gap: 1rem;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    .fidelity-item {
+      border-radius: var(--radius--lg);
+      background-color: var(--base---gray-200);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: var(--base---gray-400);
+        font-size: 2.5rem;
+        transition: all .3s;
+
+        &.active {
+          color: var(--main---green);
+        }
+      }
+    }
+  }
+}

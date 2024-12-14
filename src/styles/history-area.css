@@ -1,0 +1,35 @@
+.cuts-history {
+  padding: 1.75rem 1.5rem 0;
+
+  header {
+    margin-top: var(--spacing---sm);
+    padding-bottom: var(--spacing---md);
+    border-bottom: 1px solid var(--base---gray-200);
+    margin-bottom: var(--spacing---md);
+  }
+
+  .history-list {
+    height: 18.75rem;
+    padding-bottom: 1rem;
+    overflow: auto;
+
+    .history-item {
+      grid-template-columns: 1fr 2rem;
+    }
+
+    .check-content {
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--main---green-0\.12-opacity);
+
+      i {
+        font-size: 1.75rem;
+        color: var(--main---green);
+      }
+    }
+  }
+}

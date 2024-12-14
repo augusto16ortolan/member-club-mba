@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Fidelidade | Member Club</title>
+
+    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.svg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <figure class="logo">
+                <img src="./src/assets/member-club-logo.png" alt="Logo" />
+            </figure>
+
+            <small>DICA: Tente usar 000-000-000-000, 111-111-111-111... </small>
+            <form class="search-client">
+                <input type="text" placeholder="ID do cartão" id="client-id" name="client-id" maxlength="15" required />
+
+                <button type="submit" title="Clique para pesquisar" disabled>
+                    <i class="ph ph-arrow-elbow-down-left"></i>
+                </button>
+
+            </form>
+        </header>
+
+        <div class="grid grid-content gap-1">
+            <aside class="flex flex-column gap-1">
+                <div class="container-card profile-area flex items-center gap-1">
+                    <div class="picture">
+                        <figure>
+                            <img src="src/assets/profile-picture.png" alt="Cliente">
+                        </figure>
+                    </div>
+                    <div class="flex flex-column gap-0.25">
+                        <h1 class="title-sm text-base-gray-600">Cliente</h1>
+                        <p class="text-xs text-base-gray-500">Cliente desde: <span class="client-date"></span></p>
+                    </div>
+                </div>
+
+                <div class="container-card cuts-history">
+                    <header class="flex flex-row gap-0.5 items-center space-between">
+                        <h4 class="subtitle-sm text-base-gray-500">Histórico</h4>
+                        <p class="client-history text-xs text-base-gray-500">0 cortes</p>
+                    </header>
+
+                    <ul class="history-list flex flex-column gap-1.5"></ul>
+                </div>
+
+            </aside>
+
+            <section class="flex flex-column gap-1">
+                <div class="container-card fidelity-area flex flex-column gap-2">
+                    <div class="flex items-start gap-0.25 space-between">
+                        <div class="flex flex-column gap-0.5">
+                            <h3 class="subtitle-sm text-base-gray-500">Cartão fidelidade</h3>
+                            <p class="fidelity-text text-sm text-base-gray-500">Ao fazer cortes de cabelo, o décimo sai
+                                de graça!</p>
+                        </div>
+                        <h5 class="id-number text-nowrap">ID: <span>124-537-835-230</span></h5>
+                    </div>
+                    <div class="grid grid-fidelity gap-1">
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item"></div>
+                        <div class="fidelity-item gift-item">
+                            <i class="ph-fill ph-gift"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-card gift-reach">
+                    <div class="flex space-between gap-1">
+                        <aside class="flex flex-column flex-1 gap-0.75">
+                            <div class="flex gap-0.5 items-baseline">
+                                <h3 class="title-md text-base-gray-600">10</h3>
+                                <span class="text-md text-base-gray-500">cortes restantes</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="progress-text text-base-gray-500 text-xs text-nowrap"><span>0</span> de 10
+                                </div>
+                            </div>
+                        </aside>
+
+                        <figure>
+                            <img src="./src/assets/gift-reach.png"
+                                alt="Ícone de presente com sombra e colorido em rosa" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+</html>
